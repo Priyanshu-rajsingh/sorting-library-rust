@@ -1,0 +1,19 @@
+[package]
+name = "sorter"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "sorter"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sorter_demo"
+path = "src/main.rs"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "sort_bench"
+harness = false
