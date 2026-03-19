@@ -10,41 +10,25 @@ implementing the `PartialOrd` trait.
 - Merge Sort
 - Quick Sort
 
-## Supported Data Types
-- Integers (i32)
-- Floats (f64)
-- Strings (&str)
-- Custom structs (any type with PartialOrd)
+## Usage
+```rust
+use sorter::{BubbleSort, SortOrder, Sorter};
 
-## Project Structure
-sorter/
-├── src/
-│   ├── lib.rs
-│   ├── main.rs
-│   ├── algorithms/
-│   │   ├── bubble_sort.rs
-│   │   ├── insertion_sort.rs
-│   │   ├── selection_sort.rs
-│   │   ├── merge_sort.rs
-│   │   └── quick_sort.rs
-│   ├── traits/
-│   ├── error/
-│   └── utils/
-├── tests/
-└── benches/
+let mut numbers = vec![5, 3, 8, 1];
+BubbleSort.sort(&mut numbers, SortOrder::Ascending);
+```
 
-## Run the Demo
+## Run
+```
 cargo run --bin sorter_demo
-
-## Run Tests
 cargo test
-
-## Generate Documentation
 cargo doc --open
+```
 
-## Course
-Semester-end project — Rust Programming
-Save it, then push:
+```
+
+Then push it:
+```
 git add README.md
 git commit -m "Add README"
 git push
