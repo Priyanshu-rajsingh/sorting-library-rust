@@ -25,9 +25,7 @@ cargo test
 cargo doc --open
 ```
 
-```
-
-Then push it:
+## Then push it:
 ```
 git add README.md
 git commit -m "Add README"
